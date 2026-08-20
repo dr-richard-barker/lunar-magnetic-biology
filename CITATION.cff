@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+title: >-
+  Lunar Crustal Magnetic Field Heterogeneity and Implications
+  for Biological Systems at Candidate Landing Sites
+message: >-
+  If you use this software or data, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - name: "Richard Barker et al."
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/dr-richard-barker/lunar-magnetic-biology"
+url: "https://dr-richard-barker.github.io/lunar-magnetic-biology"
+abstract: >-
+  Analysis pipeline and interactive visualization for lunar
+  crustal magnetic field data from NASA PDS (Lunar Prospector
+  and SELENE/Kaguya), with a systematic review of hypomagnetic
+  field effects on terrestrial biology. Provides risk assessment
+  for biological systems at candidate lunar landing sites.
+keywords:
+  - lunar magnetic field
+  - hypomagnetic field
+  - astrobiology
+  - landing site selection
+  - space biology
+  - Artemis
+  - FAIR data
+license: CC-BY-4.0
+version: 1.0.0
+date-released: "2026-08-20"
+doi: "10.5281/zenodo.XXXXXXX"
+references:
+  - type: data-set
+    title: Lunar Crustal Magnetic Field Map
+    authors:
+      - family-names: Hood
+        given-names: L. L.
+      - family-names: Torres
+        given-names: C. B.
+      - family-names: Oliveira
+        given-names: J. S.
+      - family-names: Wieczorek
+        given-names: M. A.
+      - family-names: Steward
+        given-names: S. T.
+    year: 2020
+    doi: "10.17189/1520494"
+    repository: "https://pds.nasa.gov"
+  - type: data-set
+    title: Lunar Polar Magnetic Field Maps Bundle
+    authors:
+      - family-names: Hood
+        given-names: L. L.
+      - family-names: Bryant
+        given-names: I.
+      - family-names: van der Leeuw
+        given-names: J.
+    year: 2022
+    doi: "10.17189/rk57-g992"
+    repository: "https://pds.nasa.gov"

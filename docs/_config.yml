@@ -1,0 +1,8 @@
+title: "Lunar Magnetic Fields & Biology"
+description: "Exploring the magnetic anomalies of the Moon and their implications for biology."
+baseurl: "/lunar-magnetic-biology"
+url: ""
+theme: null
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag

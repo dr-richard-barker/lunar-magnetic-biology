@@ -1,0 +1,43 @@
+{
+  "title": "Lunar Crustal Magnetic Field Heterogeneity and Implications for Biological Systems at Candidate Landing Sites",
+  "description": "Analysis pipeline, publication-quality figures, and interactive visualization for lunar crustal magnetic field data from NASA PDS (Lunar Prospector and SELENE/Kaguya missions). Includes a systematic review of hypomagnetic field effects on terrestrial biology and a risk assessment framework for biological systems at candidate lunar landing sites including Artemis III regions.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "[TO BE COMPLETED]",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "keywords": [
+    "lunar magnetic field",
+    "hypomagnetic field",
+    "astrobiology",
+    "space biology",
+    "landing site selection",
+    "Artemis program",
+    "Lunar Prospector",
+    "Kaguya SELENE",
+    "magnetobiology",
+    "FAIR data"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17189/1520494",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17189/rk57-g992",
+      "relation": "isSupplementedBy",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ],
+  "communities": [
+    {"identifier": "zenodo"}
+  ],
+  "notes": "This software accompanies a manuscript submitted to a Nature Publishing Group journal. All data sourced from NASA Planetary Data System (PDS) under US Public Domain license."
+}

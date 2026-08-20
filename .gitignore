@@ -1,0 +1,45 @@
+# Data - raw files downloaded from PDS (large, reproducible via make download)
+data/raw/
+
+# Generated outputs (reproducible via make all)
+# Uncomment these if you want to track generated outputs:
+# figures/*.pdf
+# figures/*.png
+# tables/*.tex
+# docs/assets/js/mag_field_data.json
+# docs/assets/img/figures/
+
+# LaTeX auxiliary files
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.log
+manuscript/*.out
+manuscript/*.toc
+manuscript/*.pdf
+manuscript/*.fls
+manuscript/*.fdb_latexmk
+manuscript/*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+*.egg-info/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Jekyll
+docs/_site/
+docs/.jekyll-cache/
+docs/.sass-cache/
+docs/Gemfile.lock
+
+# OS
+.DS_Store
+Thumbs.db

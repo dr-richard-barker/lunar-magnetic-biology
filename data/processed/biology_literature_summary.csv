@@ -1,0 +1,17 @@
+Organism,Magnetic Condition,Biological Effect,Mechanism,Key Reference
+Arabidopsis,Hypomagnetic (<1 µT),Flowering delay,Cryptochrome alteration,Xu et al. 2012
+Arabidopsis,Null-magnetic,Auxin disruption,Polar transport disruption,Mo et al. 2011
+Arabidopsis,Hypomagnetic,Iron uptake reduction,Gene expression changes,Islam et al. 2020
+Arabidopsis,Hypomagnetic,ROS accumulation,Oxidative stress pathways,Binhi et al. 2001
+Bacteria,Hypomagnetic,Growth rate changes,Cellular metabolism shift,Martino et al. 2010
+Bacteria (Magnetotactic),Null-magnetic,Loss of orientation,Magnetosome chain disruption,Frankel et al. 1981
+Bacteria,Hypomagnetic,Biofilm formation altered,Stress response,Okuno et al. 2001
+Drosophila,Hypomagnetic,Circadian rhythm disruption,Cryptochrome dependent,Yoshii et al. 2009
+Drosophila,Null-magnetic,Developmental delay,Metabolic changes,Vitas et al. 2015
+C. elegans,Hypomagnetic,Locomotion alterations,Neuromuscular signaling,Bain et al. 2016
+C. elegans,Hypomagnetic,Lifespan extension/reduction,Stress response genes (DAF-16),Vidal-Gadea et al. 2015
+Human cells,Hypomagnetic,DNA repair inhibition,ROS and p53 pathways,Wang et al. 2008
+Human cells,Null-magnetic,Cognitive function effects,Neurological potential,Lebedev et al. 2001
+Human cells,Hypomagnetic,Bone density cell changes,Osteoblast suppression,Zhuang et al. 2014
+Plants (General),Hypomagnetic,Photosynthesis efficiency drop,Electron transport chain,Belyavskaya 2004
+Plants (General),Hypomagnetic,Germination rate decrease,Enzyme activity reduction,Maffei 2014

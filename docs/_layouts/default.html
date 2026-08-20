@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    {% seo %}
+    <!-- Three.js CDN -->
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ '/globe/' | relative_url }}">Interactive Globe</a></li>
+                    <li><a href="{{ '/data/' | relative_url }}">Data</a></li>
+                    <li><a href="{{ '/publications/' | relative_url }}">Publication</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content container">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ site.time | date: '%Y' }} Lunar Magnetic Fields & Biology. All rights reserved.</p>
+            <p>
+                <a href="https://github.com/dr-richard-barker/lunar-magnetic-biology">GitHub Repository</a> | 
+                <a href="{{ '/publications/' | relative_url }}">Data & Publications</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+\documentclass{sn-article}
+
+\title{Supplementary Information: Lunar Crustal Magnetic Field Heterogeneity and Implications for Biological Systems at Candidate Landing Sites}
+\author[1]{A. Scientist}
+\author[2]{B. Researcher}
+\affil[1]{Space Biology Institute, University of Science, City, Country}
+\affil[2]{Department of Planetary Sciences, National Research Center, City, Country}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Extended Methods}
+\subsection*{Bilinear Interpolation of Magnetic Field Data}
+The crustal magnetic field data sourced from Hood et al. (2020) and Hood et al. (2022) were provided on a \SI{0.5}{\degree} resolution grid. To estimate the magnetic field magnitude at specific landing site coordinates, a bilinear interpolation algorithm was implemented. This approach utilizes the four nearest grid points to the target coordinate $(\lambda, \phi)$, weighting the contribution of each point inversely by its geographic distance to the target. The magnetic field components $(B_r, B_\theta, B_\phi)$ were interpolated independently before calculating the total magnitude $|\mathbf{B}|$.
+
+\subsection*{Coordinate Database Compilation}
+Landing site coordinates were compiled from peer-reviewed mission reports and NASA planetary data archives. For the Artemis III candidate sites, coordinates were sourced from the NASA Artemis III Candidate Landing Regions report (2022). Historical Apollo site coordinates were verified against the Lunar Reconnaissance Orbiter Camera (LROC) derived coordinates.
+
+\section*{Supplementary Figures}
+\textbf{Figure S1.} High-resolution map of the south polar region crustal magnetic field (\SI{60}{\degree}S to \SI{90}{\degree}S), highlighting the 13 Artemis III candidate landing regions. The map utilizes data from Hood et al. (2022).
+
+\textbf{Figure S2.} Comparative analysis of the magnetic field magnitude at \SI{30}{\kilo\meter} altitude across all analyzed landing sites. Error bars represent the local variance within a \SI{10}{\kilo\meter} radius of the central coordinates.
+
+\section*{Full Landing Site Database}
+The complete database containing mission designations, geographical coordinates, and calculated magnetic field components is available in the data repository associated with this study.
+
+\end{document}
