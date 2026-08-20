@@ -1,14 +1,18 @@
-\documentclass{sn-article}
+\documentclass{npj-article}
 
 \title{Supplementary Information: Lunar Crustal Magnetic Field Heterogeneity and Implications for Biological Systems at Candidate Landing Sites}
-\author[1]{Richard Barker}
-\author[2]{Co-Authors}
-\affil[1]{Space Life Sciences, University of Wisconsin-Madison, Madison, WI, USA}
-\affil[2]{Astrobiology & Lunar Exploration Working Group}
-\date{\today}
+
+\author{%
+  \textbf{Richard Barker}\textsuperscript{1,*},
+  \textbf{Co-Investigators}\textsuperscript{2}
+  \vspace{2mm}\\
+  \textsuperscript{1}\footnotesize Department of Botany \& Space Life Sciences, University of Wisconsin--Madison, Madison, WI 53706, USA\\
+  \textsuperscript{2}\footnotesize Astrobiology \& Planetary Science Exploration Group\\
+  \textsuperscript{*}\footnotesize Corresponding author: \href{mailto:rbarker2@wisc.edu}{rbarker2@wisc.edu}
+}
 
 \begin{document}
-\maketitle
+\makefrontmatter
 
 \section*{Extended Methods}
 
@@ -20,23 +24,24 @@ Landing site coordinates were compiled from official NASA Artemis III Candidate 
 
 \section*{Supplementary Figures}
 
-\begin{figure}[h]
+\begin{figure*}[h]
 \centering
-\includegraphics[width=\columnwidth]{../figures/fig_S1_polar_detail.pdf}
-\caption{\textbf{Supplementary Figure S1: Lunar South Polar region ($\SI{60}{\degree}\text{S}$ to $\SI{90}{\degree}\text{S}$) candidate landing sites.} Polar stereographic projection displaying the 13 Artemis III candidate landing regions (red stars) and Chandrayaan-3 (blue triangle) in relation to South Polar latitude rings.}
+\includegraphics[width=0.75\textwidth]{../figures/fig_S1_polar_detail.pdf}
+\caption{\textbf{Supplementary Figure S1 \textbar\ Lunar South Polar region ($\SI{60}{\degree}\text{S}$ to $\SI{90}{\degree}\text{S}$) candidate landing sites.} Polar stereographic projection displaying the 13 Artemis III candidate landing regions (red stars) and Chandrayaan-3 (blue triangle) in relation to South Polar latitude rings.}
 \label{fig:S1_polar_detail}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[h]
+\begin{figure*}[h]
 \centering
-\includegraphics[width=\columnwidth]{../figures/fig_S2_field_histogram.pdf}
-\caption{\textbf{Supplementary Figure S2: Global distribution of lunar crustal magnetic field magnitude.} Histogram showing the frequency distribution of $|\mathbf{B}|$ at \SI{30}{\kilo\meter} across 140,940 grid points, with global median (\SI{0.56}{\nano\tesla}), global mean (\SI{0.77}{\nano\tesla}), Artemis III candidate site mean (\SI{0.59}{\nano\tesla}), Apollo 16 (\SI{4.94}{\nano\tesla}), and Chang'e 4 (\SI{0.72}{\nano\tesla}) highlighted.}
+\includegraphics[width=0.85\textwidth]{../figures/fig_S2_field_histogram.pdf}
+\caption{\textbf{Supplementary Figure S2 \textbar\ Global distribution of lunar crustal magnetic field magnitude.} Histogram showing the frequency distribution of $|\mathbf{B}|$ at \SI{30}{\kilo\meter} across 140,940 grid points, with global median (\SI{0.56}{\nano\tesla}), global mean (\SI{0.77}{\nano\tesla}), Artemis III candidate site mean (\SI{0.59}{\nano\tesla}), Apollo 16 (\SI{4.94}{\nano\tesla}), and Chang'e 4 (\SI{0.72}{\nano\tesla}) highlighted.}
 \label{fig:S2_field_histogram}
-\end{figure}
+\end{figure*}
 
 \section*{Data and Code Availability}
-The full machine-readable landing site database, processed global grids, figure generation scripts, and interactive WebGL globe source code are available in the public GitHub repository (\url{https://github.com/dr-richard-barker/lunar-magnetic-biology}) and archived under DOI: 10.5281/zenodo.XXXXXXX.
+The full machine-readable landing site database, processed global grids, figure generation scripts, and interactive WebGL globe source code are available in the public GitHub repository (\url{https://github.com/dr-richard-barker/lunar-magnetic-biology}) and archived under DOI: \href{https://doi.org/10.5281/zenodo.XXXXXXX}{10.5281/zenodo.XXXXXXX}.
 
+\renewcommand{\bibnumfmt}[1]{#1.}
 \bibliographystyle{unsrtnat}
 \bibliography{references}
 

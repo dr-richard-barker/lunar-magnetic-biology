@@ -8,7 +8,7 @@
 #   make figures      — Generate publication-quality figures
 #   make tables       — Generate LaTeX-ready tables
 #   make web          — Export data for the interactive web globe
-#   make manuscript   — Compile the LaTeX manuscript to PDF
+#   make manuscript   — Compile the npj Microgravity LaTeX manuscript to PDF
 #   make site         — Build the GitHub Pages site locally
 #   make clean        — Remove generated outputs
 #   make validate     — Validate FAIR compliance artifacts
@@ -25,7 +25,7 @@ WEB_DIR := docs/assets
 
 # ─── Full Pipeline ───────────────────────────────────────────────────────────
 
-all: download analysis figures tables web
+all: download analysis figures tables web manuscript
 
 # ─── Data Acquisition ────────────────────────────────────────────────────────
 
@@ -68,8 +68,11 @@ web: $(DATA_PROC)/lunar_mag_field_grid.csv $(DATA_PROC)/landing_sites_magnetic.c
 # ─── Manuscript ───────────────────────────────────────────────────────────────
 
 manuscript:
-	@echo "==> Compiling LaTeX manuscript..."
+	@echo "==> Compiling npj Microgravity manuscript..."
 	$(MAKE) -C manuscript pdf
+	@mkdir -p $(WEB_DIR)/pdf
+	@cp -f manuscript/main.pdf $(WEB_DIR)/pdf/manuscript_npj_microgravity.pdf
+	@cp -f manuscript/supplementary.pdf $(WEB_DIR)/pdf/supplementary_information.pdf
 
 # ─── GitHub Pages Site ────────────────────────────────────────────────────────
 

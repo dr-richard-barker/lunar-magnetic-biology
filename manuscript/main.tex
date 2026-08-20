@@ -1,24 +1,43 @@
-\documentclass{sn-article}
+\documentclass{npj-article}
 
 \title{Lunar Crustal Magnetic Field Heterogeneity and Implications for Biological Systems at Candidate Landing Sites}
-\author[1]{Richard Barker}
-\author[2]{Collaborators}
-\affil[1]{Space Life Sciences, University of Wisconsin-Madison, Madison, WI, USA}
-\affil[2]{Department of Astrobiology & Planetary Sciences}
-\date{\today}
+
+\author{%
+  \textbf{Richard Barker}\textsuperscript{1,*},
+  \textbf{Co-Investigators}\textsuperscript{2}
+  \vspace{2mm}\\
+  \textsuperscript{1}\footnotesize Department of Botany \& Space Life Sciences, University of Wisconsin--Madison, Madison, WI 53706, USA\\
+  \textsuperscript{2}\footnotesize Astrobiology \& Planetary Science Exploration Group\\
+  \textsuperscript{*}\footnotesize Corresponding author: \href{mailto:rbarker2@wisc.edu}{rbarker2@wisc.edu}
+}
 
 \input{sections/abstract.tex}
 
 \begin{document}
-\maketitle
-\linenumbers
+\makefrontmatter
 
 \input{sections/introduction.tex}
-\input{sections/methods.tex}
 \input{sections/results.tex}
 \input{sections/discussion.tex}
+\input{sections/methods.tex}
 \input{sections/conclusion.tex}
 
+\section*{Data Availability}
+The lunar crustal magnetic field datasets analyzed in this study are available through the NASA Planetary Data System (PDS) Planetary Plasma Interactions (PPI) Node under DOIs \href{https://doi.org/10.17189/1520494}{10.17189/1520494} and \href{https://doi.org/10.17189/rk57-g992}{10.17189/rk57-g992}. Processed landing site tables, systematic review datasets, and interactive 3D visualization assets are archived in the Zenodo repository (\href{https://doi.org/10.5281/zenodo.XXXXXXX}{DOI: 10.5281/zenodo.XXXXXXX}) and hosted on GitHub (\url{https://github.com/dr-richard-barker/lunar-magnetic-biology}).
+
+\section*{Code Availability}
+All Python scripts, processing pipelines, figure generation modules, and web visualization source code are open source under the MIT license and available at \url{https://github.com/dr-richard-barker/lunar-magnetic-biology}.
+
+\section*{Acknowledgements}
+The authors acknowledge the NASA Planetary Data System (PDS) and the science teams of the Lunar Prospector and SELENE (Kaguya) missions for archiving and providing open access to the lunar magnetometer observations. This work was supported by space biology research initiatives.
+
+\section*{Author Contributions}
+R.B. conceived the study, developed the data analysis pipeline, executed the magnetobiology literature synthesis, generated the figures and tables, and wrote the manuscript. All authors reviewed and approved the final manuscript.
+
+\section*{Competing Interests}
+The authors declare no competing financial or non-financial interests.
+
+\renewcommand{\bibnumfmt}[1]{#1.}
 \bibliographystyle{unsrtnat}
 \bibliography{references}
 
