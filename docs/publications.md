@@ -9,7 +9,8 @@ permalink: /publications/
 ### Manuscript & Preprint
 
 **Title**: Lunar Crustal Magnetic Field Heterogeneity and Implications for Biological Systems at Candidate Landing Sites  
-**Authors**: Richard Barker\*, Co-Investigators  
+**Authors**: Richard Barker\*, Adriana Kaley Sanchez, Manisha Dagar, Katrina Boland, Cauê Sciascia Borlina, D. Marshall Porterfield  
+**Affiliation**: Purdue University, West Lafayette, IN, USA  
 **Journal Target**: Nature Publishing Group (*npj Microgravity*, in preparation)
 
 <div class="publication-card">
@@ -33,7 +34,7 @@ The lunar magnetic environment is characterized by the complete absence of an ac
 <pre id="bibtex-code">
 @article{barker2026lunar,
   title={Lunar Crustal Magnetic Field Heterogeneity and Implications for Biological Systems at Candidate Landing Sites},
-  author={Barker, Richard and Co-Investigators},
+  author={Barker, Richard and Sanchez, Adriana Kaley and Dagar, Manisha and Boland, Katrina and Borlina, Cau{\^e} Sciascia and Porterfield, D. Marshall},
   journal={npj Microgravity},
   year={2026},
   volume={12},

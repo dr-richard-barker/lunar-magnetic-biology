@@ -9,8 +9,23 @@ type: software
 authors:
   - family-names: Barker
     given-names: Richard
-    affiliation: University of Wisconsin-Madison
+    affiliation: Purdue University
     orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: Sanchez
+    given-names: Adriana Kaley
+    affiliation: Purdue University
+  - family-names: Dagar
+    given-names: Manisha
+    affiliation: Purdue University
+  - family-names: Boland
+    given-names: Katrina
+    affiliation: Purdue University
+  - family-names: Borlina
+    given-names: Cauê Sciascia
+    affiliation: Purdue University
+  - family-names: Porterfield
+    given-names: D. Marshall
+    affiliation: Purdue University
 repository-code: "https://github.com/dr-richard-barker/lunar-magnetic-biology"
 url: "https://dr-richard-barker.github.io/lunar-magnetic-biology"
 abstract: >-
