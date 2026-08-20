@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    <link rel="stylesheet" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-theme.css" />
+    <link rel="stylesheet" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-chrome.css" />
+    <link rel="stylesheet" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-map.css" />
+    <style>
+      /* Ensure the CoSE rail layout is layered correctly above custom styles */
+      .topbar.cose-dark, .topbar.cose-light{z-index:10001!important}
+      .sitebar.cose-dark, .sitebar.cose-light{z-index:10000!important}
+      .map-scrim{z-index:9999!important}
+    </style>
     {% seo %}
     <!-- Three.js CDN -->
     <script type="importmap">
@@ -16,7 +25,7 @@
     }
     </script>
 </head>
-<body>
+<body data-site-id="lunar-magnetic-biology" data-brand-logo="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-logo.png">
     <header class="site-header">
         <div class="container">
             <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
@@ -44,5 +53,7 @@
             </p>
         </div>
     </footer>
+    <script src="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/sites.js"></script>
+    <script src="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/theme.js"></script>
 </body>
 </html>
