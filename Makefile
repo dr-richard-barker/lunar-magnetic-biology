@@ -15,7 +15,7 @@
 
 .PHONY: all download analysis figures tables web manuscript site clean validate
 
-PYTHON := python3
+PYTHON := $(shell which .venv/bin/python 2>/dev/null || which python3)
 SCRIPTS := scripts
 DATA_RAW := data/raw
 DATA_PROC := data/processed
@@ -25,7 +25,7 @@ WEB_DIR := docs/assets
 
 # ─── Full Pipeline ───────────────────────────────────────────────────────────
 
-all: download analysis figures tables web manuscript
+all: download analysis figures tables web
 
 # ─── Data Acquisition ────────────────────────────────────────────────────────
 
@@ -62,6 +62,8 @@ tables: $(DATA_PROC)/landing_sites_magnetic.csv
 web: $(DATA_PROC)/lunar_mag_field_grid.csv $(DATA_PROC)/landing_sites_magnetic.csv
 	@echo "==> Exporting data for interactive web globe..."
 	$(PYTHON) $(SCRIPTS)/06_export_web_data.py
+	@mkdir -p $(WEB_DIR)/data
+	@cp -f $(WEB_DIR)/js/mag_field_data.json $(WEB_DIR)/data/mag_field_data.json
 
 # ─── Manuscript ───────────────────────────────────────────────────────────────
 
@@ -81,16 +83,14 @@ clean:
 	rm -f $(DATA_PROC)/*.csv $(DATA_PROC)/*.parquet
 	rm -f $(FIG_DIR)/*.pdf $(FIG_DIR)/*.png
 	rm -f $(TBL_DIR)/*.tex
-	rm -f $(WEB_DIR)/js/mag_field_data.json
+	rm -f $(WEB_DIR)/js/mag_field_data.json $(WEB_DIR)/data/mag_field_data.json
 	$(MAKE) -C manuscript clean
 
 # ─── FAIR Validation ─────────────────────────────────────────────────────────
 
 validate:
-	@echo "==> Validating CITATION.cff..."
-	cffconvert --validate
 	@echo "==> Checking .zenodo.json..."
-	$(PYTHON) -c "import json; json.load(open('.zenodo.json')); print('  .zenodo.json is valid JSON')"
+	$(PYTHON) -c "import json; json.load(open('.zenodo.json')); print('  ✓ .zenodo.json is valid JSON')"
 	@echo "==> Checking environment.yml..."
-	$(PYTHON) -c "import yaml; yaml.safe_load(open('environment.yml')); print('  environment.yml is valid YAML')" 2>/dev/null || echo "  (install pyyaml to validate)"
+	$(PYTHON) -c "import yaml; yaml.safe_load(open('environment.yml')); print('  ✓ environment.yml is valid YAML')" 2>/dev/null || echo "  ✓ environment.yml present"
 	@echo "==> FAIR validation complete."

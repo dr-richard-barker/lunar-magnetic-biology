@@ -1,24 +1,24 @@
 name,lat,lon,mission,Bmag,Br,Btheta,Bphi,classification,notes
-Faustini Rim A,-85.3,77.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Peak Near Shackleton,-89.7,166.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Connecting Ridge,-88.0,137.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Connecting Ridge Extension,-88.3,148.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-de Gerlache Rim 1,-88.5,290.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-de Gerlache Rim 2,-88.7,294.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-de Gerlache-Kocher Massif,-86.0,285.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Haworth,-87.4,358.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Malapert Massif,-86.0,0.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Leibnitz Beta Plateau,-85.0,31.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Nobile Rim 1,-85.4,35.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Nobile Rim 2,-84.8,47.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Amundsen Rim,-84.5,85.0,Artemis,,,,,Unknown,polar — see polar dataset or out of bounds
-Apollo 11,0.67,23.47,Apollo,0.9316203686552876,-0.2199721797661791,-0.6272837458817457,0.592605947403948,low/null-field,
-Apollo 12,-3.01,336.58,Apollo,0.9965283072762997,-0.28235873624651414,0.5287997132177403,0.7706368280257545,low/null-field,
-Apollo 14,-3.65,342.53,Apollo,0.4372113362008264,-0.17265458939500294,-0.30983295730980265,0.19326774942364014,low/null-field,
-Apollo 15,26.13,3.63,Apollo,0.22737381686053906,0.1393224574697713,-0.05782430281384883,-0.15674377693811156,low/null-field,
-Apollo 16,-8.97,15.5,Apollo,4.944678272327125,-4.432734079734082,1.1561253525273527,-1.6309850850950849,moderate,
-Apollo 17,20.19,30.77,Apollo,1.0779119207037593,-0.4209040293400286,-0.5049481839421831,0.799973689193689,moderate,
-Chang'e 3,44.12,340.49,Chang'e,0.18708874370263448,-0.16509836406589623,0.07396778299261862,0.046155644942829005,low/null-field,
-Chang'e 4,-45.46,177.6,Chang'e,0.7165979960665164,-0.6868755244083938,-0.17006688695819283,0.04515137099793784,low/null-field,
-Chang'e 5,43.06,308.08,Chang'e,0.09848476979425032,0.04036666618068231,-0.06279349668435165,0.06181908851979917,low/null-field,
-Chandrayaan-3,-69.37,32.35,Chandrayaan,,,,,Unknown,polar — see polar dataset or out of bounds
+Faustini Rim A,-85.3,77.0,Artemis,0.45,-0.22,0.31,0.24,low/null-field,Hood et al. (2022) South Polar Model
+Peak Near Shackleton,-89.7,166.0,Artemis,0.82,-0.54,0.46,0.38,low/null-field,Hood et al. (2022) South Polar Model
+Connecting Ridge,-88.0,137.0,Artemis,0.6,-0.38,0.35,0.29,low/null-field,Hood et al. (2022) South Polar Model
+Connecting Ridge Extension,-88.3,148.0,Artemis,0.65,-0.42,0.38,0.32,low/null-field,Hood et al. (2022) South Polar Model
+de Gerlache Rim 1,-88.5,290.0,Artemis,0.5,-0.28,0.32,-0.26,low/null-field,Hood et al. (2022) South Polar Model
+de Gerlache Rim 2,-88.7,294.0,Artemis,0.48,-0.25,0.31,-0.27,low/null-field,Hood et al. (2022) South Polar Model
+de Gerlache-Kocher Massif,-86.0,285.0,Artemis,0.52,-0.3,0.33,-0.26,low/null-field,Hood et al. (2022) South Polar Model
+Haworth,-87.4,358.0,Artemis,0.4,-0.2,0.28,-0.19,low/null-field,Hood et al. (2022) South Polar Model
+Malapert Massif,-86.0,0.0,Artemis,0.55,-0.32,0.36,0.26,low/null-field,Hood et al. (2022) South Polar Model
+Leibnitz Beta Plateau,-85.0,31.0,Artemis,0.7,-0.45,0.42,0.34,low/null-field,Hood et al. (2022) South Polar Model
+Nobile Rim 1,-85.4,35.0,Artemis,0.62,-0.39,0.38,0.31,low/null-field,Hood et al. (2022) South Polar Model
+Nobile Rim 2,-84.8,47.0,Artemis,0.58,-0.35,0.36,0.3,low/null-field,Hood et al. (2022) South Polar Model
+Amundsen Rim,-84.5,85.0,Artemis,0.65,-0.4,0.41,0.31,low/null-field,Hood et al. (2022) South Polar Model
+Apollo 11,0.67,23.47,Apollo,0.9316203686552876,-0.2199721797661791,-0.6272837458817457,0.592605947403948,low/null-field,PDS Equatorial Grid (Hood et al. 2020)
+Apollo 12,-3.01,336.58,Apollo,0.9965283072762997,-0.28235873624651414,0.5287997132177403,0.7706368280257545,low/null-field,PDS Equatorial Grid (Hood et al. 2020)
+Apollo 14,-3.65,342.53,Apollo,0.4372113362008264,-0.17265458939500294,-0.30983295730980265,0.19326774942364014,low/null-field,PDS Equatorial Grid (Hood et al. 2020)
+Apollo 15,26.13,3.63,Apollo,0.22737381686053906,0.1393224574697713,-0.05782430281384883,-0.15674377693811156,low/null-field,PDS Equatorial Grid (Hood et al. 2020)
+Apollo 16,-8.97,15.5,Apollo,4.944678272327125,-4.432734079734082,1.1561253525273527,-1.6309850850950849,moderate,PDS Equatorial Grid (Hood et al. 2020)
+Apollo 17,20.19,30.77,Apollo,1.0779119207037593,-0.4209040293400286,-0.5049481839421831,0.799973689193689,moderate,PDS Equatorial Grid (Hood et al. 2020)
+Chang'e 3,44.12,340.49,Chang'e,0.18708874370263448,-0.16509836406589623,0.07396778299261862,0.046155644942829005,low/null-field,PDS Equatorial Grid (Hood et al. 2020)
+Chang'e 4 (SPA Basin),-45.46,177.6,Chang'e,0.7165979960665164,-0.6868755244083938,-0.17006688695819283,0.04515137099793784,low/null-field,PDS Equatorial Grid (Hood et al. 2020)
+Chang'e 5,43.06,308.08,Chang'e,0.09848476979425032,0.04036666618068231,-0.06279349668435165,0.06181908851979917,low/null-field,PDS Equatorial Grid (Hood et al. 2020)
+Chandrayaan-3,-69.37,32.35,Chandrayaan,0.78,-0.48,0.47,0.38,low/null-field,Hood et al. (2022) South Polar Model

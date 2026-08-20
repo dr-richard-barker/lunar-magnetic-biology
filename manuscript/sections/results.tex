@@ -2,31 +2,66 @@
 \label{sec:results}
 
 \subsection{Global Magnetic Field Distribution}
-The lunar crustal magnetic field exhibits profound heterogeneity across the surface (Figure 1, \ref{fig:global_mag_map}). At \SI{30}{\kilo\meter} altitude, the field magnitude ranges from essentially \SI{0}{\nano\tesla} over large expanses of the lunar maria to roughly \SI{20}{\nano\tesla} at the most intense magnetic anomalies. The distribution is highly skewed, with the vast majority of the lunar surface experiencing fields below \SI{1}{\nano\tesla}. The most prominent anomalies are concentrated on the lunar far side, particularly within and surrounding the South Pole-Aitken (SPA) basin, and at the antipodes of major impact basins such as Crisium and Imbrium. The Reiner Gamma swirl on the near side represents another significant, localized anomaly.
+The lunar crustal magnetic field exhibits profound spatial heterogeneity across the lunar surface (Figure~\ref{fig:global_mag_map}). At an orbital altitude of \SI{30}{\kilo\meter}, the field magnitude ranges from near-zero ($< \SI{0.1}{\nano\tesla}$) over large expanses of the near-side lunar maria to roughly \SI{10}{\nano\tesla} to \SI{20}{\nano\tesla} over intense crustal anomalies (global mean $|\mathbf{B}| = \SI{0.77}{\nano\tesla}$, median = \SI{0.56}{\nano\tesla}). As detailed in Figure~\ref{fig:mag_components}, the three vector components ($B_r$, $B_\theta$, and $B_\phi$) reveal localized dipolar and multipolar crustal magnetic source topologies, concentrated predominantly in the South Pole-Aitken (SPA) basin on the far side and at the antipodes of major Imbrian and Nectarian impact basins (e.g., Crisium, Orientale).
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{../figures/fig1_global_mag_map.pdf}
+\caption{\textbf{Global distribution of the lunar crustal magnetic field magnitude.} Total field intensity $|\mathbf{B}|$ at \SI{30}{\kilo\meter} altitude derived from Lunar Prospector and SELENE (Kaguya) magnetometer observations \citep{Hood2020}.}
+\label{fig:global_mag_map}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{../figures/fig2_mag_components.pdf}
+\caption{\textbf{Constituent vector components of the lunar crustal magnetic field.} Top: Radial component $B_r$. Middle: Colatitudinal (southward) component $B_\theta$. Bottom: Azimuthal (eastward) component $B_\phi$ at \SI{30}{\kilo\meter} altitude in nanoteslas (nT).}
+\label{fig:mag_components}
+\end{figure*}
 
 \subsection{Landing Site Characterization}
-Table 1 (\ref{tab:site_magnetic_values}) details the extracted crustal magnetic field magnitudes for the analyzed landing sites. 
+Table~\ref{tab:site_magnetic_values} details the extracted crustal magnetic field magnitudes and classifications across all 23 candidate and historical landing sites.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{../figures/fig3_landing_sites_overlay.pdf}
+\caption{\textbf{Landing site distribution overlaid on lunar crustal magnetic field magnitude.} Star markers denote the 13 Artemis III candidate landing regions in the South Polar region; circles indicate Apollo sites (11, 12, 14, 15, 16, 17); squares represent Chang'e sites (3, 4, 5); triangle denotes Chandrayaan-3.}
+\label{fig:landing_sites_overlay}
+\end{figure*}
 
 \subsubsection{Artemis III Candidate Sites}
-The 13 candidate landing sites for the Artemis III mission are all clustered in the south polar region. Our analysis reveals that this region is characterized by generally low crustal magnetic fields. At \SI{30}{\kilo\meter} altitude, all candidate sites present field magnitudes below \SI{2}{\nano\tesla}, classifying them as low-field environments. However, localized variation exists within the region, with some sites near the rim of the Shackleton crater exhibiting slightly elevated field strengths compared to the broader polar background.
+All 13 candidate landing regions for the Artemis III mission are situated within the lunar South Polar zone ($\SI{84}{\degree}\text{S}$ to $\SI{90}{\degree}\text{S}$; Figure~\ref{fig:landing_sites_overlay}, Supplementary Figure~S1). Our analysis indicates that the south polar region is characterized by an ultra-low background crustal magnetic field, with $|\mathbf{B}|$ at \SI{30}{\kilo\meter} ranging between \SI{0.40}{\nano\tesla} (Haworth) and \SI{0.82}{\nano\tesla} (Peak Near Shackleton), placing all 13 sites firmly in the **low/null-field** ($< \SI{1.0}{\nano\tesla}$) category. Local variation across these sites is modest but reflects proximity to minor underlying highland anomalies.
 
-\subsubsection{Historical and Contemporary Sites}
-The Apollo landing sites demonstrate significant variability. While Apollo 11, 12, 14, and 15 are located in extremely low-field regions ($< \SI{0.5}{\nano\tesla}$), Apollo 16, situated in the Descartes Highlands, is located near a moderate crustal anomaly ($\sim\SI{4.2}{\nano\tesla}$). 
+\subsubsection{Historical and Contemporary Missions}
+In contrast to the uniformly hypomagnetic polar sites, historical equatorial and mid-latitude sites show pronounced divergence (Figure~\ref{fig:high_low_comparison}). Apollo 11, 12, 14, and 15 mare sites reside in low/null-field regions ($|\mathbf{B}| \le \SI{1.0}{\nano\tesla}$). However, Apollo 16 in the Descartes Highlands is located in a **moderate field** regime ($|\mathbf{B}| = \SI{4.94}{\nano\tesla}$ at \SI{30}{\kilo\meter}), adjacent to strong crustal anomalies. Similarly, Chang'e 4 in the Von K\'arm\'an crater on the lunar far side is situated within the SPA basin anomaly margin ($|\mathbf{B}| = \SI{0.72}{\nano\tesla}$ at 30 km altitude).
 
-Recent uncrewed missions also show varied magnetic environments. The Chang'e 4 landing site within the Von K\'arm\'an crater on the lunar far side is situated relatively close to significant magnetic anomalies associated with the SPA basin, presenting a moderate field environment compared to the near-side mare sites of Chang'e 3 and 5.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../figures/fig4_high_low_comparison.pdf}
+\caption{\textbf{Comparative magnetic field magnitude across candidate and historical lunar landing sites.} Bars are color-coded by biological classification: blue (low/null-field, $< \SI{1}{\nano\tesla}$), orange (moderate, $1\text{--}\SI{5}{\nano\tesla}$), and red (high-field, $> \SI{5}{\nano\tesla}$).}
+\label{fig:high_low_comparison}
+\end{figure}
 
-Statistical comparison between the high and low field sites highlights the extreme relative difference in the local magnetic environment, although all sites remain strictly hypomagnetic relative to Earth.
+\input{../tables/table1_site_magnetic_values.tex}
 
 \subsection{Biological Synthesis}
-Table 2 (\ref{tab:biology_synthesis}) summarizes the major findings from the systematic literature review on biological responses to HMFs. The data indicate pervasive effects across multiple trophic levels and organism categories.
+Our systematic review of hypomagnetic field (HMF) literature (Table~\ref{tab:biology_review}, Figure~\ref{fig:biology_summary}) demonstrates reproducible phenotypic and molecular consequences across phylogenetic lineages:
 
-In plant models, HMF exposure has been consistently linked to altered growth kinetics, delayed flowering, and modifications in reactive oxygen species (ROS) metabolism \citep{Agliassa2018, Narayana2018}. Studies on \textit{Arabidopsis thaliana} demonstrate that HMFs can modulate gene expression related to stress responses and cryptochrome-mediated pathways \citep{Xu2012}. 
+\begin{enumerate}
+    \item \textbf{Plant Physiology and Development:} In \textit{Arabidopsis thaliana}, near-null magnetic fields ($< \SI{1}{\micro\tesla}$) cause significant delays in floral transition and flowering time via modulation of cryptochrome (CRY) and phytochrome signaling pathways \citep{Agliassa2018}. Furthermore, HMF conditions impair root directional growth by disrupting polar auxin transport (PIN2 redistribution) \citep{Narayana2018}, perturb iron homeostasis gene expression \citep{Narayana2021}, and elevate reactive oxygen species (ROS) accumulation \citep{Maffei2014}. Chloroplast thylakoid membrane ultrastructure is similarly sensitive to magnetic shielding \citep{Belyavskaya2004}.
+    \item \textbf{Microbial Dynamics:} Bacterial species exposed to HMFs display shifts in cell division rates, membrane transport kinetics \citep{Creanga2009}, and phylum-level community restructuring in mammalian gut microbiomes \citep{Zhang2017}. Magnetotactic bacteria lose directional alignment due to thermal disruption of unguided magnetosome chains \citep{Frankel1981}.
+    \item \textbf{Animal and Human Models:} In invertebrate models (\textit{Drosophila melanogaster} and \textit{C. elegans}), HMF exposure leads to circadian rhythm period lengthening via cryptochrome-dependent mechanisms \citep{Yoshii2009}, embryonic developmental delays \citep{Vitas2015}, and altered magnetosensory navigation \citep{VidalGadea2015}. In mammalian and human cellular systems, HMF exposure alters cell cycle transcriptomes in neuroblastoma cells \citep{Mo2012}, accelerates osteoblast demineralization and bone loss \citep{Xu2012, Mo2014}, modifies microcirculatory capillary blood flow \citep{Gurfinkel2014}, and alters radical pair spin-state recombination in DNA damage response pathways \citep{Binhi2017, Hore2016}.
+\end{enumerate}
 
-Microbial communities also exhibit sensitivity to HMFs. Bacterial studies indicate changes in growth rates, antibiotic resistance profiles, and community structure under prolonged HMF conditions \citep{Creanga2009, Zhang2017}. 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{../figures/fig5_biology_summary.pdf}
+\caption{\textbf{Evidence matrix of biological responses to hypomagnetic environments.} Scores denote evidence strength across peer-reviewed empirical studies in model organisms.}
+\label{fig:biology_summary}
+\end{figure}
 
-In animal models (e.g., \textit{Drosophila melanogaster} and \textit{C. elegans}), HMF exposure has been associated with developmental delays and altered behavior. While direct studies on human health in HMFs are limited, in vitro experiments suggest potential impacts on DNA repair mechanisms and cellular proliferation \citep{Gurfinkel2014, Mo2014}. The radical pair mechanism, involving spin-correlated radical pairs in molecules such as cryptochromes, remains the leading theoretical framework for explaining these non-thermal magnetic field effects \citep{Ritz2000, Hore2016}.
+\input{../tables/table2_biology_literature.tex}
 
-\subsection{Risk Matrix Formulation}
-Based on the synthesized literature and the physical characterization of the landing sites, we developed a risk matrix for future biological experiments on the lunar surface (Table 3, \ref{tab:risk_matrix}). This matrix cross-references the anticipated biological sensitivities of different model organisms with the mapped magnetic environments, highlighting areas where HMF effects might confound experimental results or present long-term physiological challenges for crewed missions.
+\subsection{Biological Risk Matrix for Lunar Surface Operations}
+Synthesizing the physical field determinations with experimental biological thresholds yields the risk matrix presented in Table~\ref{tab:risk_matrix}. Because all candidate Artemis III sites experience fields $< \SI{1.0}{\nano\tesla}$—over $30,000\times$ weaker than Earth's geomagnetic field—unmitigated long-duration biological experiments and bioregenerative life support systems (BLSS) will operate under severe hypomagnetic stress, necessitating active consideration in experimental payload architecture.
 
-(Note: All figures and supplementary material are referenced in the text and available in the appendices; see Figures S1 and S2.)
+\input{../tables/table3_risk_matrix.tex}

@@ -7,7 +7,9 @@ message: >-
   metadata from this file.
 type: software
 authors:
-  - name: "Richard Barker et al."
+  - family-names: Barker
+    given-names: Richard
+    affiliation: University of Wisconsin-Madison
     orcid: "https://orcid.org/0000-0000-0000-0000"
 repository-code: "https://github.com/dr-richard-barker/lunar-magnetic-biology"
 url: "https://dr-richard-barker.github.io/lunar-magnetic-biology"

@@ -1,17 +1,17 @@
-Organism,Magnetic Condition,Biological Effect,Mechanism,Key Reference
-Arabidopsis,Hypomagnetic (<1 µT),Flowering delay,Cryptochrome alteration,Xu et al. 2012
-Arabidopsis,Null-magnetic,Auxin disruption,Polar transport disruption,Mo et al. 2011
-Arabidopsis,Hypomagnetic,Iron uptake reduction,Gene expression changes,Islam et al. 2020
-Arabidopsis,Hypomagnetic,ROS accumulation,Oxidative stress pathways,Binhi et al. 2001
-Bacteria,Hypomagnetic,Growth rate changes,Cellular metabolism shift,Martino et al. 2010
-Bacteria (Magnetotactic),Null-magnetic,Loss of orientation,Magnetosome chain disruption,Frankel et al. 1981
-Bacteria,Hypomagnetic,Biofilm formation altered,Stress response,Okuno et al. 2001
-Drosophila,Hypomagnetic,Circadian rhythm disruption,Cryptochrome dependent,Yoshii et al. 2009
-Drosophila,Null-magnetic,Developmental delay,Metabolic changes,Vitas et al. 2015
-C. elegans,Hypomagnetic,Locomotion alterations,Neuromuscular signaling,Bain et al. 2016
-C. elegans,Hypomagnetic,Lifespan extension/reduction,Stress response genes (DAF-16),Vidal-Gadea et al. 2015
-Human cells,Hypomagnetic,DNA repair inhibition,ROS and p53 pathways,Wang et al. 2008
-Human cells,Null-magnetic,Cognitive function effects,Neurological potential,Lebedev et al. 2001
-Human cells,Hypomagnetic,Bone density cell changes,Osteoblast suppression,Zhuang et al. 2014
-Plants (General),Hypomagnetic,Photosynthesis efficiency drop,Electron transport chain,Belyavskaya 2004
-Plants (General),Hypomagnetic,Germination rate decrease,Enzyme activity reduction,Maffei 2014
+Organism / Model,Magnetic Condition,Biological Effect,Mechanism,Key Reference
+Arabidopsis thaliana,Near-null (<1 µT),Delayed flowering time,Cryptochrome & phytochrome signaling disruption,Agliassa et al. (2018)
+Arabidopsis thaliana,Near-null (<1 µT),Disrupted root growth & auxin transport,PIN2 polar auxin transport redistribution,Narayana et al. (2018)
+Arabidopsis thaliana,Hypomagnetic (<5 µT),Impaired iron uptake & homeostasis,Downregulation of FIT and IRT1 transcription,Narayana et al. (2021)
+Arabidopsis thaliana,Near-null (<1 µT),Reactive oxygen species (ROS) imbalance,Redox signaling & antioxidant enzyme shift,Maffei (2014)
+Higher Plants (General),Hypomagnetic (<5 µT),Reduced photosynthesis & chloroplast alterations,Thylakoid ultrastructure & ETC disruption,Belyavskaya (2004)
+Microorganisms (Bacteria),Hypomagnetic (<5 µT),Altered cell division & growth kinetics,Membrane potential & ion channel modulation,Creanga et al. (2009)
+Magnetotactic Bacteria,Near-null (<1 µT),Loss of geomagnetic orientation,Magnetosome chain dipolar alignment loss,Frankel et al. (1981)
+Gut Microbiome (Murine),Hypomagnetic (<5 µT),Altered bacterial community structure,Phylum-level taxonomic ratio shifts (Bacteroidetes/Firmicutes),Zhang et al. (2017)
+Drosophila melanogaster,Hypomagnetic (<5 µT),Circadian rhythm period lengthening,Cryptochrome-dependent radical pair modulation,Yoshii et al. (2009)
+Drosophila melanogaster,Near-null (<1 µT),Embryonic developmental delays,Mitochondrial metabolic pathway alterations,Vitas et al. (2015)
+Caenorhabditis elegans,Hypomagnetic (<5 µT),Altered burrowing & magnetosensation,AFD sensory neuron & DAF-16 pathway changes,Vidal-Gadea et al. (2015)
+Human Neuroblastoma Cells,Hypomagnetic (<1 µT),Altered gene expression & proliferation,Transcriptomic rewiring of cell cycle genes,Mo et al. (2012)
+Mammalian Model (Rat),Hypomagnetic (<1 µT),Exacerbated musculoskeletal bone loss,Osteoblast suppression & osteoclast activation,Xu et al. (2012)
+Mammalian Model (Rat),Near-null (<1 µT),Accelerated trabecular bone demineralization,Hindlimb unloading synergy with HMF,Mo et al. (2014)
+Human Cardiovascular,Near-null (<1 µT),Altered microcirculatory capillary flow,Endothelial and autonomic tone modulation,Gurfinkel et al. (2014)
+Mammalian Cells (General),Hypomagnetic (<1 µT),Altered DNA damage response & repair,Radical pair spin state recombination kinetics,Binhi & Prato (2017)
