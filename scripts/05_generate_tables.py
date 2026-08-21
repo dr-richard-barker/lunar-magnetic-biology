@@ -41,12 +41,12 @@ def generate_table1():
     with open(tex_path, 'w') as f:
         f.write("\\begin{table*}[t]\n")
         f.write("\\centering\n")
-        f.write("\\small\n")
+        f.write("\\footnotesize\n")
         f.write("\\caption{\\textbf{Crustal magnetic field environment at planned Artemis, Apollo, Chang'e, and Chandrayaan landing sites.} Total field magnitude $|\\mathbf{B}|$ and vector components at \\SI{30}{\\kilo\\meter} altitude derived from Lunar Prospector and Kaguya observations.}\n")
         f.write("\\label{tab:site_magnetic_values}\n")
         f.write("\\begin{tabular}{llrrccl}\n")
         f.write("\\toprule\n")
-        f.write("\\textbf{Landing Site} & \\textbf{Mission} & \\textbf{Latitude ($^\\circ$)} & \\textbf{Longitude ($^\\circ$)} & \\textbf{$|\\mathbf{B}|$ at 30 km (nT)} & \\textbf{Classification} & \\textbf{Data Source} \\\\\n")
+        f.write("\\textbf{Landing Site} & \\textbf{Mission} & \\textbf{Lat ($^\\circ$)} & \\textbf{Lon ($^\\circ$)} & \\textbf{$|\\mathbf{B}_{\\text{30km}}|$ (nT)} & \\textbf{Classification} & \\textbf{Data Source} \\\\\n")
         f.write("\\midrule\n")
         
         for _, row in df.iterrows():
@@ -56,7 +56,7 @@ def generate_table1():
             lon = f"{row['lon']:.2f}"
             bmag = f"{row['Bmag']:.2f}"
             classification = row['classification']
-            source = row['notes'].replace('&', '\\&')
+            source = str(row['notes']).replace('&', '\\&')
             f.write(f"{name} & {mission} & {lat} & {lon} & {bmag} & {classification} & {source} \\\\\n")
             
         f.write("\\bottomrule\n")
@@ -103,10 +103,10 @@ def generate_table2_and_csv():
     with open(tex_path, 'w') as f:
         f.write("\\begin{table*}[t]\n")
         f.write("\\centering\n")
-        f.write("\\small\n")
+        f.write("\\footnotesize\n")
         f.write("\\caption{\\textbf{Systematic synthesis of biological responses and physiological mechanisms documented under hypomagnetic field (HMF) conditions.} Summary of peer-reviewed experimental literature across plants, microbes, animals, and human cellular models.}\n")
         f.write("\\label{tab:biology_review}\n")
-        f.write("\\begin{tabular}{p{3.2cm}p{2.6cm}p{3.6cm}p{4.6cm}p{3.2cm}}\n")
+        f.write("\\begin{tabular}{p{2.8cm}p{2.2cm}p{3.4cm}p{4.4cm}p{3.0cm}}\n")
         f.write("\\toprule\n")
         f.write("\\textbf{Organism / Model} & \\textbf{Condition} & \\textbf{Biological Effect} & \\textbf{Mechanism} & \\textbf{Key Reference} \\\\\n")
         f.write("\\midrule\n")
@@ -126,18 +126,18 @@ def generate_table3():
     with open(tex_path, 'w') as f:
         f.write("\\begin{table*}[t]\n")
         f.write("\\centering\n")
-        f.write("\\small\n")
+        f.write("\\footnotesize\n")
         f.write("\\caption{\\textbf{Biological risk matrix across lunar magnetic environments.} Qualitative risk classification for key biological processes relative to baseline terrestrial geomagnetic field (GMF) exposure.}\n")
         f.write("\\label{tab:risk_matrix}\n")
-        f.write("\\begin{tabular}{p{4.8cm}cccc}\n")
+        f.write("\\begin{tabular}{p{4.0cm}cccc}\n")
         f.write("\\toprule\n")
-        f.write("\\textbf{Biological System} & \\textbf{Earth GMF ($\\sim\\SI{50}{\\micro\\tesla}$)} & \\textbf{Lunar High-Field ($>\\SI{5}{\\nano\\tesla}$)} & \\textbf{Lunar Moderate ($\\SI{1}{--}\\SI{5}{\\nano\\tesla}$)} & \\textbf{Lunar Null-Field ($<\\SI{1}{\\nano\\tesla}$)} \\\\\n")
+        f.write("\\textbf{Biological System} & \\textbf{Earth GMF ($\\sim\\SI{50}{\\micro\\tesla}$)} & \\textbf{Lunar High ($>\\SI{5}{\\nano\\tesla}$)} & \\textbf{Lunar Moderate ($\\SI{1}{--}\\SI{5}{\\nano\\tesla}$)} & \\textbf{Lunar Null ($<\\SI{1}{\\nano\\tesla}$)} \\\\\n")
         f.write("\\midrule\n")
-        f.write("Plant Vegetative Growth and Biomass & Nominal (Baseline) & Low-Moderate Risk & Moderate Risk & High Risk \\\\\n")
-        f.write("Plant Flowering and Seed Production & Nominal (Baseline) & Moderate Risk & Moderate-High Risk & High Risk \\\\\n")
-        f.write("Microbial Ecology and Biofilm Dynamics & Nominal (Baseline) & Low Risk & Low-Moderate Risk & Moderate Risk \\\\\n")
-        f.write("Animal Development and Circadian Clocks & Nominal (Baseline) & Moderate Risk & Moderate-High Risk & High Risk \\\\\n")
-        f.write("Human Cellular Integrity and Bone Mass & Nominal (Baseline) & Moderate-High Risk & High Risk & High Risk \\\\\n")
+        f.write("Plant Vegetative Biomass & Nominal (Baseline) & Low-Moderate Risk & Moderate Risk & High Risk \\\\\n")
+        f.write("Plant Flowering and Seed Yield & Nominal (Baseline) & Moderate Risk & Moderate-High Risk & High Risk \\\\\n")
+        f.write("Microbial Ecology and Biofilms & Nominal (Baseline) & Low Risk & Low-Moderate Risk & Moderate Risk \\\\\n")
+        f.write("Animal Development and Clocks & Nominal (Baseline) & Moderate Risk & Moderate-High Risk & High Risk \\\\\n")
+        f.write("Human Bone and Cellular Stability & Nominal (Baseline) & Moderate-High Risk & High Risk & High Risk \\\\\n")
         f.write("\\bottomrule\n")
         f.write("\\end{tabular}\n")
         f.write("\\end{table*}\n")
