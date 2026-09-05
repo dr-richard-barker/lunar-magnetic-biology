@@ -78,7 +78,7 @@
 \fancyhf{}
 \fancyhead[L]{\sffamily\footnotesize\textbf{npj} \textbf{\color{npjblue}microgravity}}
 \fancyhead[R]{\sffamily\footnotesize\color{grayhead}ARTICLE \quad\textbar\quad OPEN}
-\fancyfoot[L]{\sffamily\footnotesize\color{grayhead}\textit{npj Microgravity} (2026) 12:45 \quad \textbar\quad \url{https://doi.org/10.1038/s41526-026-00451-x}}
+\fancyfoot[L]{\sffamily\footnotesize\color{grayhead}Manuscript in preparation \quad \textbar\quad \url{https://github.com/dr-richard-barker/lunar-magnetic-biology}}
 \fancyfoot[R]{\sffamily\footnotesize\bfseries\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
