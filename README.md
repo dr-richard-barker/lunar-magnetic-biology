@@ -99,14 +99,11 @@ make validate   # Validate FAIR compliance (JSON, YAML, CITATION.cff)
 ## How to Cite
 
 ```bibtex
-@article{barker2026lunar,
+@unpublished{barker2026lunar,
   title={Lunar Crustal Magnetic Field Heterogeneity and Implications for Biological Systems at Candidate Landing Sites},
   author={Barker, Richard and Sanchez, Adriana Kaley and Dagar, Manisha and Boland, Katrina and Borlina, Cau{\^e} Sciascia and Porterfield, D. Marshall},
-  journal={npj Microgravity},
   year={2026},
-  volume={12},
-  pages={45},
-  doi={10.1038/s41526-026-00451-x},
+  note={Manuscript in preparation; target journal: npj Microgravity. Not yet published --- no DOI, volume or page numbers have been assigned.},
   url={https://github.com/dr-richard-barker/lunar-magnetic-biology}
 }
 ```
